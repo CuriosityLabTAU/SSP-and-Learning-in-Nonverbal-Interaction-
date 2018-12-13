@@ -171,14 +171,17 @@ class ExpFlow():
 
     def _play_A(self, round_num, part_num):
         print "play A, " + str(part_num)
+        # the direction should be replaced with self.directions["A"] (instead of self.right)
         return self.function_matrix[round_num][part_num][self.A](self.right)
 
     def _play_C(self, round_num, part_num):
         print "play C, " + str(part_num)
+        # the direction should be replaced with self.directions["C"] (instead of self.left)
         return self.function_matrix[round_num][part_num][self.C](self.left)
 
     def _play_D(self, round_num, part_num):
         print "play D , " + str(part_num)
+        # the direction should be replaced with self.directions["D"] (instead of self.center)
         return self.function_matrix[round_num][part_num][self.D](self.center)
 
     def _play_B(self, round_num, part_num):

@@ -14,6 +14,8 @@ class ExpFlow():
             "D": self.center
         }
 
+        # the first level is the round number ( 0 or 1 )
+        # second level is within each round, the part number
         self.function_matrix = {
             0: {
                 0:{
@@ -48,7 +50,7 @@ class ExpFlow():
 
         self.loveDirection = -1
 
-
+    # A,C,D - This is the relationship matrix
     def initialize_exp(self, A, C, D):
         self.A = A
         self.C = C
@@ -64,6 +66,7 @@ class ExpFlow():
             self.loveDirection = self.directions["D"]
 
 
+    # round_num - 0 for the first round and 1 for the second round
     def start(self, round_num):
 
         self._intro(round_num)
@@ -72,7 +75,6 @@ class ExpFlow():
 
 
     def _intro(self, round_num):
-
 
         if round_num == 0:
             self.root_nao.run_behavior(["dialog_posture/bhv_sit_down", "wait"])
@@ -143,12 +145,13 @@ class ExpFlow():
 
         self.wait_time(start_time, True)
 
-
+    #make sure each turn is at least 15 sec
     def wait_time(self, start_time, playEnd = False ):
         print str(time.time() - start_time - 15 )
         remain_time = 0 if time.time() - start_time - 15 <= 0 else time.time() - start_time - 15
         time.sleep(remain_time)
         self.root_nao.blink()
+        
         if playEnd:
             return
 

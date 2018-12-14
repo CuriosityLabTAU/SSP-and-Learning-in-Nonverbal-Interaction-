@@ -1,8 +1,10 @@
-# FinalProject
-This is the final project in computer - human interaction.
+# annotations-editor
+
+To run the project select main.py
+
 
 need to install:
 opencv-python
 
 
-to run select main.py
+

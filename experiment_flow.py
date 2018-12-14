@@ -50,7 +50,7 @@ class ExpFlow():
 
         self.loveDirection = -1
 
-    # A,C,D - This is the relationship matrix
+    # A,C,D - This is the relationship matrix. values: -1: hate, 0: neutral, 1: friend
     def initialize_exp(self, A, C, D):
         self.A = A
         self.C = C

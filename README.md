@@ -7,6 +7,7 @@ Each branch holds different part :
 2. **questionnaires-analysis:** contains all the code for analysing of the 4 questionnaires: NARS, GOODSPEED, AQ and SCS
 3. **annotations-editor:** contains all the code for the annotation of the videos (recording of the experiment)  
 
-This project was done by:
-Julia Schatz Juliaschatz90@gmail.com 
-Elina Visoki elinavis@gmail.com
+Contact information:
+- Elina Visoki elinavis@gmail.com
+- Julia Schatz Juliaschatz90@gmail.com 
+

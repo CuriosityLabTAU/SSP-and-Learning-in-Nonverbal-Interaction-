@@ -1,4 +1,7 @@
 # experiment-code
+
+Experiment protocol can be found in "protocol.docx"
+
 To run the project: 
 1. Upload the recordded behaviors " Elina_Julia.zip" to the robot. Make sure the name of the package is "elina_julia"
 2. Update the main.py:

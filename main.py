@@ -122,6 +122,7 @@ df_godspeed_2 = original_data[["Godspeed_" + str(i) for i in range(6, 12)]].asty
 df_godspeed_3 = original_data[["Godspeed_" + str(i) for i in range(12, 17)]].astype(int).mean(axis=1).to_frame("GODSPEED 3: LIKEABILITY")
 
 df_godspeed = original_data[["Godspeed_" + str(i) for i in range(17, 25)]]
+# 21 and 23 were turn over in the questionnaire
 df_godspeed["Godspeed_21"] = 6 - df_godspeed["Godspeed_21"].astype(int)
 df_godspeed["Godspeed_23"] = 6 - df_godspeed["Godspeed_23"].astype(int)
 
